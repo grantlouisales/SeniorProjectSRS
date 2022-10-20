@@ -12,6 +12,15 @@
     * [1.2.1 Product](#1.2.1-product)
     * [1.2.2 Product's Functionality](#1.2.2-Product's-Functionality)
     * [1.2.3 Included Core Features](#1.2.3-core-features) 
+* [1.3 Overview](#1.3-overview) 
+* [1.4 Workflow](#1.4-workflow) 
+    * [1.4.1 Coding](#1.4.1-coding) 
+    * [1.4.2 Design](#1.4.2-design) 
+    * [1.4.3 Learning Model](#1.4.3-learning-model) 
+    * [1.4.4 Quality Assurance Characteristics](#1.4.4-quality-assurance-characteristics) 
+    * [1.4.5 Metrics](#1.4.5-metrics) 
+    * [1.4.6 Security Risks](#1.4.6-security-risks) 
+
 
 <br>
 
@@ -49,59 +58,60 @@ The core features of the QA campaign service:
 <br>
 
 # 1.3 Overview <a name="1.3-overview" />
-The overview for the QA campaign service will work with internal family search services.
-
-## 1.3.1 Product perspective <a name="1.3.1-product-perspective" />
-This will be a list of interfaces the QA campaign service will interact with as well as other product perspectives.
-
-<br>
-
-### 1.3.1.1 System Interfaces <a name="1.3.1.1-system-interface" />
-The system interfaces will be the programs or applications it will run on.
-
-- The QA campaign service will run on webservices.
-- The QA campaign service will connect to Family Search authentication services.
+The overview for the QA campaign service will be that it will follow a list of standards and expectations. Things to know about the service:
+- The QA campain service will only be used Quality Assurance means
+- The QA campain service will be a 3rd tier Family Search service
+- The QA campain service will be using a SQL database
+- The QA campain service will only be used by Family Search
 
 <br>
 
-### 1.3.1.2 User Interfaces <a name="1.3.1.2-user-interface" />
-The user interfaces will be what the user will see.
+# 1.4 Workflow <a name="1.4-workflow"/>
+The workflow of the QA campaign service will be the standards to be followed.
 
-- The QA campaign service will use postman to call the endpoints.
-- The QA campaign service will use Splunk to visualize the data results of the service.
+### 1.4.1 Coding <a name="1.4.1-coding" />
+The language the QA campaign service will be coded in:
 
-<br>
-
-### 1.3.1.3 Hardware Interfaces <a name="1.3.1.3-hardware-interface" />
-The hardware for the QA campaign service will be:
-
-- Any computer.
+- Java
 
 <br>
 
-### 1.3.1.4 Software Interfaces <a name="1.3.1.4-software-interface" />
-The software interfaces will be the language or programs used for the service.
-
-- Operating Systems:
-    - The QA campaign service shall be able to use windows operating systems.
-    - The QA campaign service shall be able to use  Mac operating systems.
-    - The QA campaign service shall be able to use linux operating systems.
-
-<br>
-
-### 1.3.1.5 Memory <a name="1.3.1.5-memory" />
-This will talk about proper memory handling for the QA campaign service.
-
-- The QA campaign service shall download a file from a database.
-- The QA campaign service shall delete the file after use.
-- The QA campaign service shall have a memory retention plan.
+### 1.4.2 Design <a name="1.4.2-design" />
+The designs used for the QA campaign service will be:
+- flowcharts
+- pseudocode
+- structure charts
+- class diagrams
 
 <br>
 
-### 1.3.1.6 Operations <a name="1.3.1.6-operations" />
-- Operations by the user shall include:
-    - Validation test on email data file.
-    - API calls to check valid relationship between patron and ancestor.
-    - User Interface testing on campaign landing pages.
-    - Cancelation of QA tasks.
-    - All features can be done in integration, beta, and production.
+### 1.4.3 Learning Model <a name="1.4.3-learning-model" />
+The learning models that will be used are:
+- Confluence
+- Springboot documentation
+- Java documentation
+- Peers
+- Baeldung
+
+<br>
+
+### 1.4.4 Quality Assurance Characteristics <a name="1.4.4-quality-assurance-characteristics" />
+The QA campaign service will have unit tests that will keep the code coverage percentage about 70%.
+
+<br>
+
+### 1.4.5 Metrics <a name="1.4.5-metrics" />
+The QA campaign service will follow the Family Search metrics to make sure the service does
+not fall below performance expectations.
+
+<br>
+
+### 1.4.6 Security Risks <a name="1.4.6-security-risks" />
+Since the QA campaign service will be a 3rd tier service there will be little to no security risks. The security risks for the QA campaign service will be:
+- Outdated Operating Systems
+- Weak passwords
+
+<br>
+
+
+# 2.1 Requirements <a name="2.1-requirements" />
