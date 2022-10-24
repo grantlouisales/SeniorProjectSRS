@@ -17,10 +17,11 @@
     * [1.4.1 Coding](#1.4.1-coding) 
     * [1.4.2 Design](#1.4.2-design) 
     * [1.4.3 Learning Model](#1.4.3-learning-model) 
-    * [1.4.4 Quality Assurance Characteristics](#1.4.4-quality-assurance-characteristics) 
-    * [1.4.5 Metrics](#1.4.5-metrics) 
-    * [1.4.6 Security Risks](#1.4.6-security-risks) 
-
+    * [1.4.4 Architecture](#1.4.4-architecture)
+    * [1.4.5 Quality Assurance Characteristics](#1.4.5-quality-assurance-characteristics) 
+    * [1.4.6 Metrics](#1.4.6-metrics) 
+    * [1.4.7 Security Risks](#1.4.7-security-risks) 
+* [1.5 User Profiles](#1.5-user-profiles) 
 
 <br>
 
@@ -97,23 +98,32 @@ The learning models that will be used are:
 
 <br>
 
-### 1.4.4 Quality Assurance Characteristics <a name="1.4.4-quality-assurance-characteristics" />
+### 1.4.4 Architecture <a name="1.4.4-architecture" />
+The QA campaign service will have meetings with the organizations architectual design council to help form the architecture of the service. 
+
+<br>
+
+
+### 1.4.5 Quality Assurance Characteristics <a name="1.4.5-quality-assurance-characteristics" />
 The QA campaign service will have unit tests that will keep the code coverage percentage about 70%.
 
 <br>
 
-### 1.4.5 Metrics <a name="1.4.5-metrics" />
+### 1.4.6 Metrics <a name="1.4.6-metrics" />
 The QA campaign service will follow the Family Search metrics to make sure the service does
 not fall below performance expectations.
 
 <br>
 
-### 1.4.6 Security Risks <a name="1.4.6-security-risks" />
+### 1.4.6 Security Risks <a name="1.4.7-security-risks" />
 Since the QA campaign service will be a 3rd tier service there will be little to no security risks. The security risks for the QA campaign service will be:
 - Outdated Operating Systems
 - Weak passwords
 
 <br>
+
+# 1.5 User Profiles <a name="1.5-user-profiles"/>
+The QA campaign service users will be the QA and backend teams for the global campaigns team.
 
 
 # 2.1 Requirements <a name="2.1-requirements" />
