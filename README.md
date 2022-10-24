@@ -72,7 +72,7 @@ The overview for the QA campaign service will be that it will follow a list of s
 # 1.4 Workflow <a name="1.4-workflow"/>
 The workflow of the QA campaign service will be the standards to be followed.
 
-## 1.4.1 Coding <a name="1.4.1-coding" />
+### 1.4.1 Coding <a name="1.4.1-coding" />
 The language the QA campaign service will be coded in:
 
 - Java
