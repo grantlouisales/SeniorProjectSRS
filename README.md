@@ -22,6 +22,15 @@
     * [1.4.6 Metrics](#1.4.6-metrics) 
     * [1.4.7 Security Risks](#1.4.7-security-risks) 
 * [1.5 User Profiles](#1.5-user-profiles) 
+* [2.1 User Profiles](#2.1-requirements) 
+* [2.2 Functional Requirements](#2.2-functional-requirements) 
+* [2.3 Performance Requirements](#2.3-performance-requirements) 
+* [2.4 Logical Database Requirements](#2.4-logical-database-requirements) 
+* [2.5 System Requirements](#2.5-system-requirements) 
+* [2.6 External System Requirements](#2.6-external-system-requirements) 
+
+
+
 
 <br>
 
@@ -129,8 +138,8 @@ The QA campaign service users will be the QA and backend teams for the global ca
 
 <br>
 
-# 2. Requirements <a name="2.1-requirements" />
-The requirements will be what the QA campaign service must include. This section will have the details for the service regarding the functions of the service, the performance of the service, the databases used for the service, and the system requirements for the service.
+# 2.1 Requirements <a name="2.1-requirements" />
+The requirements will be what the QA campaign service must include. This section will have the details for the service regarding the functions of the service, the performance of the service, the database actions used for the service, and the system requirements for the service.
 
 <br>
 
@@ -151,7 +160,13 @@ This functional requirements section will go over the main functions of the QA c
 
 # 2.3 Performance Requirements <a name="2.3-performance-requirements" />
 The performance requirements section will talk about all the requirements regarding the performance of the QA campaign service.
-***2.3.1*** The QA campaign service shall
+
+***2.3.1*** The QA campaign service shall complete the validation test on the email data file in less than 3 minutes. <br>
+***2.3.2*** The QA campaign service shall use multi-thread processing to quickly make API calls. <br>
+***2.3.3*** The QA campaign service shall cancel a task soon after calling the endpoint. <br>
+***2.3.4*** The QA campaign service shall . <br>
+***2.3.5*** The QA campaign service shall . <br>
+
 
 <br>
 
@@ -167,20 +182,24 @@ The logical database requirements section will talk about all the requirements f
 ***2.4.7*** The QA campaign service shall use the database to log errors. <br>
 ***2.4.8*** The QA campaign service database shall have a data retention policy. <br>
 
-
 <br>
 
 # 2.5 System Requirements <a name="2.5-system-requirements" />
 The system requirements section will talk about all the requirements for the QA campaign service system.
 
-***2.5.1*** The QA campaign service shall
+***2.5.1*** The QA campaign service shall use 
+
 <br>
 
 # 2.6 External System Requirements <a name="2.6-external-system-requirements" />
 The external requirements section will talk about all the requirements for external services needed for the QA campaign service.
 
-***2.6.1*** The QA campaign service shall
-- The QA campaign service will use AWS to host the web service.
-- The QA campaign service will use Github for version control.
+***2.6.1*** The QA campaign service shall use AWS to host the web service. <br>
+***2.6.2*** The QA campaign service shall use GitHub for version control. <br>
+***2.6.3*** The QA campaign service shall use Splunk for quality control. <br>
+***2.6.4*** The QA campaign service shall use CloudBees to handle integration. <br>
+***2.6.5*** The QA campaign service shall use PostMan to call the endpoints. <br>
+***2.6.6*** The QA campaign service shall use JFrog to handle the services artifacts. <br>
+***2.6.7*** The QA campaign service shall use OKTA for service management. <br>
 
 <br>
