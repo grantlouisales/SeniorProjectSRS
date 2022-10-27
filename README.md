@@ -63,6 +63,7 @@ The core features of the QA campaign service:
 - API calls to check valid relationships between patron and ancestor.
 - User Interface testing on campaign landing pages.
 - Cancelation of QA tasks.
+- Endpoint to get status using the job id.
 - All features can be done in integration, beta, and production.
 
 <br>
@@ -164,9 +165,8 @@ The performance requirements section will talk about all the requirements regard
 ***2.3.1*** The QA campaign service shall complete the validation test on the email data file in less than 3 minutes. <br>
 ***2.3.2*** The QA campaign service shall use multi-thread processing to quickly make API calls. <br>
 ***2.3.3*** The QA campaign service shall cancel a task soon after calling the endpoint. <br>
-***2.3.4*** The QA campaign service shall . <br>
-***2.3.5*** The QA campaign service shall . <br>
-
+***2.3.4*** The QA campaign service shall start a validation task soon after calling the endpoint. <br>
+***2.3.5*** The QA campaign service shall get the task details soon after calling the endpoint. 
 
 <br>
 
@@ -187,7 +187,8 @@ The logical database requirements section will talk about all the requirements f
 # 2.5 System Requirements <a name="2.5-system-requirements" />
 The system requirements section will talk about all the requirements for the QA campaign service system.
 
-***2.5.1*** The QA campaign service shall use 
+***2.5.1*** The QA campaign service shall use multiple threads to process email data. <br>
+***2.5.2*** The QA campaign service shall be available through all web browsers. <br>
 
 <br>
 
