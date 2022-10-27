@@ -101,6 +101,8 @@ The learning models that will be used are:
 ### 1.4.4 Architecture <a name="1.4.4-architecture" />
 The QA campaign service will have meetings with the organizations architectual design council to help form the architecture of the service. 
 
+The QA campaign service will have code reviews with other developers to ensure efficiency is at a professional level.
+
 <br>
 
 
@@ -125,5 +127,60 @@ Since the QA campaign service will be a 3rd tier service there will be little to
 # 1.5 User Profiles <a name="1.5-user-profiles"/>
 The QA campaign service users will be the QA and backend teams for the global campaigns team.
 
+<br>
 
-# 2.1 Requirements <a name="2.1-requirements" />
+# 2. Requirements <a name="2.1-requirements" />
+The requirements will be what the QA campaign service must include. This section will have the details for the service regarding the functions of the service, the performance of the service, the databases used for the service, and the system requirements for the service.
+
+<br>
+
+# 2.2 Functional Requirements <a name="2.2-functional-requirements" />
+This functional requirements section will go over the main functions of the QA campaign service.
+
+***2.2.1***  The QA campaign service shall do a validation test on the email data file. <br>
+***2.2.2***  The QA campaign service shall make API calls calls to check valid relationships for the patron. <br>
+***2.2.3***  The QA campaign service shall make API calls calls to check valid relationships for the ancestor. <br>
+***2.2.4***  The QA campaign service shall test campaign landing pages user interfaces. <br>
+***2.2.5***  The QA campaign service shall cancel running validation tasks. <br>
+***2.2.6***  The QA campaign service shall be testable in integration. <br>
+***2.2.7***  The QA campaign service shall be testable in beta. <br>
+***2.2.8***  The QA campaign service shall be testable in production. <br>
+***2.2.9***  The QA campaign service shall log errors to Splunk. <br>
+
+<br>
+
+# 2.3 Performance Requirements <a name="2.3-performance-requirements" />
+The performance requirements section will talk about all the requirements regarding the performance of the QA campaign service.
+***2.3.1*** The QA campaign service shall
+
+<br>
+
+# 2.4 Logical Database Requirements <a name="2.4-logical-database-requirements" />
+The logical database requirements section will talk about all the requirements for the QA campaign service database.
+
+***2.4.1*** The QA campaign service shall use a SQL database. <br>
+***2.4.2*** The QA campaign service shall use the database to retrieve tasks. <br>
+***2.4.3*** The QA campaign service shall use the database to cancel tasks. <br>
+***2.4.4*** The QA campaign service shall use the database to start tasks. <br>
+***2.4.5*** The QA campaign service shall use the database hold information on the campaign task. <br>
+***2.4.6*** The QA campaign service shall use the database manipulate information on the campaign task. <br>
+***2.4.7*** The QA campaign service shall use the database to log errors. <br>
+***2.4.8*** The QA campaign service database shall have a data retention policy. <br>
+
+
+<br>
+
+# 2.5 System Requirements <a name="2.5-system-requirements" />
+The system requirements section will talk about all the requirements for the QA campaign service system.
+
+***2.5.1*** The QA campaign service shall
+<br>
+
+# 2.6 External System Requirements <a name="2.6-external-system-requirements" />
+The external requirements section will talk about all the requirements for external services needed for the QA campaign service.
+
+***2.6.1*** The QA campaign service shall
+- The QA campaign service will use AWS to host the web service.
+- The QA campaign service will use Github for version control.
+
+<br>
