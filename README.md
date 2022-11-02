@@ -156,6 +156,9 @@ This functional requirements section will go over the main functions of the QA c
 ***2.2.7***  The QA campaign service shall be testable in beta. <br>
 ***2.2.8***  The QA campaign service shall be testable in production. <br>
 ***2.2.9***  The QA campaign service shall log errors to Splunk. <br>
+***2.2.10*** The QA campaign service shall have aws kick off unit tests regularly. <br>
+***2.2.11*** The QA campaign service shall have aws kick off acceptance tests regularly. <br>
+
 
 <br>
 
@@ -166,7 +169,8 @@ The performance requirements section will talk about all the requirements regard
 ***2.3.2*** The QA campaign service shall use multi-thread processing to quickly make API calls. <br>
 ***2.3.3*** The QA campaign service shall cancel a task soon after calling the endpoint. <br>
 ***2.3.4*** The QA campaign service shall start a validation task soon after calling the endpoint. <br>
-***2.3.5*** The QA campaign service shall get the task details soon after calling the endpoint. 
+***2.3.5*** The QA campaign service shall get the task details soon after calling the endpoint.
+***2.3.6*** The QA campaign service shall notify developers when performance falls below a determined percentage. <br> 
 
 <br>
 
