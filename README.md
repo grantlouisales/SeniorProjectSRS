@@ -8,6 +8,7 @@
 
 ## **Table of Contents**
 * [1.1 Purpose](#1.1-purpose)
+
 * [1.2 Scope](#1.2-scope)
     * [1.2.1 Product](#1.2.1-product)
     * [1.2.2 Product's Functionality](#1.2.2-Product's-Functionality)
@@ -21,13 +22,20 @@
     * [1.4.5 Quality Assurance Characteristics](#1.4.5-quality-assurance-characteristics) 
     * [1.4.6 Metrics](#1.4.6-metrics) 
     * [1.4.7 Security Risks](#1.4.7-security-risks) 
-* [1.5 User Profiles](#1.5-user-profiles) 
+    * [1.5 User Profiles](#1.5-user-profiles) 
 * [2.1 User Profiles](#2.1-requirements) 
-* [2.2 Functional Requirements](#2.2-functional-requirements) 
-* [2.3 Performance Requirements](#2.3-performance-requirements) 
-* [2.4 Logical Database Requirements](#2.4-logical-database-requirements) 
-* [2.5 System Requirements](#2.5-system-requirements) 
-* [2.6 External System Requirements](#2.6-external-system-requirements) 
+    * [2.2 Functional Requirements](#2.2-functional-requirements) 
+    * [2.3 Performance Requirements](#2.3-performance-requirements) 
+    * [2.4 Logical Database Requirements](#2.4-logical-database-requirements) 
+    * [2.5 System Requirements](#2.5-system-requirements) 
+    * [2.6 External System Requirements](#2.6-external-system-requirements) 
+* [3.1 Design Overview](#3.1-design-overview)
+    * [3.2 Data](#3.2-data)
+    * [3.3 Process Flow](#3.3-process-flow)
+* [4.1 Verification](#4.1-verification)
+    * [4.1 Verification](#4.1-verification)
+
+
 
 
 
@@ -207,4 +215,54 @@ The external requirements section will talk about all the requirements for exter
 ***2.6.6*** The QA campaign service shall use JFrog to handle the services artifacts. <br>
 ***2.6.7*** The QA campaign service shall use OKTA for service management. <br>
 
+
+# 3.1 Design Overview <a name="3.1-design-overview" />
+This section will go over the way the program's design and workflow will happen.
+
+***3.1.1*** The QA campaign service will call an endpoint to download the campaign data. <br>
+
+***3.1.2*** The QA campaign service will then unzip that file and start doing validation tests on the whole file. <br>
+
+***3.1.3*** The QA campaign service will then complete the validation tests and then call a findrelation endpoint to test the relationships of ancestor and patron. <br>
+
+***3.1.4*** The QA campaign service will grab 20,000 random lines of data and make API calls on those lines of data using multi-thread processing. <br>
+
+***3.1.5*** The QA campaign service will then test teh UI of the campaign pages using WebdriverIO. <br>
+
+***3.1.6*** The QA campaign service will be able to cancel a task at any given point in the process. <br>
+
+***3.1.7*** The QA campaign service will be run in integration, beta, or production at all times. <br>
+
+***3.1.8*** The QA campaign service will send alerts to splunk during the entirity of the process. <br>
+
+***3.1.9*** The QA campaign service will be hosted in AWS and will be a backend to QA service. <br>
+
+***3.1.10*** The QA campaign service will lastly call an endpoint called qamarkedapprove to send the data to marketing if it passed all QA tests. <br>
+
 <br>
+
+
+# 3.2 Data <a name="3.2-data" />
+This section will describe the data that is being used in the service.
+
+***3.2.1*** The QA campaign service shall download a file from an endpoint. <br>
+
+***3.2.2*** The QA campaign service shall delete the the file after the processing has been done. <br>
+
+***3.2.3*** The QA campaign service shall have a data retention policy for the database. <br>
+
+***3.2.4*** The QA campaign service shall store task details in a database.  <br>
+
+***3.2.5*** The QA campaign service shall pass along information and task data to marketing once all the tests are passed. <br>
+
+<br>
+
+# 3.3 Process Flow <a name="3.3-process-flow" />
+
+![Process Flow](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/SRSSeniorProject.drawio.png?raw=true) 
+
+
+<br>
+
+
+# 4.1 Verification <a name="4.1-verification" />
