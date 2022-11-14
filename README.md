@@ -33,7 +33,11 @@
     * [3.2 Data](#3.2-data)
     * [3.3 Process Flow](#3.3-process-flow)
 * [4.1 Verification](#4.1-verification)
-    * [4.1 Verification](#4.1-verification)
+    * [2.2 Functional Requirements Verification](#4.2-functional-requirements-verification) 
+    * [2.3 Performance Requirements Verification](#4.3-performance-requirements-verification) 
+    * [2.4 Logical Database Requirements Verification](#4.4-logical-database-requirements-verification) 
+    * [2.5 System Requirements Verification](#4.5-system-requirements-verification) 
+    * [2.6 External System Requirements Verification](#4.6-external-system-requirements-verification) 
 
 
 
@@ -266,3 +270,67 @@ This section will describe the data that is being used in the service.
 
 
 # 4.1 Verification <a name="4.1-verification" />
+The verification section will go over all of the requirements above and explain how the verification for the requirements will be completed.
+
+# 4.2 Functional Requirements Verification <a name="4.2-functional-requirements-verification" />
+This functional requirements verification section will go over the verifications for the main functions of the QA campaign service.
+
+***4.2.1***  The QA campaign service shall verify that validation tests on the email data file will happen. <br>
+***4.2.2***  The QA campaign service shall verify that API calls will be made to check valid relationships for the patron. <br>
+***4.2.3***  The QA campaign service shall verify that API calls will be made to check valid relationships for the ancestor. <br>
+***4.2.4***  The QA campaign service shall verify that campaign landing pages user interfaces will be tested. <br>
+***4.2.5***  The QA campaign service shall verify that running validation tasks can be canceled. <br>
+***4.2.6***  The QA campaign service shall verify that it will be testable in integration. <br>
+***4.2.7***  The QA campaign service shall verify that it will be testable in beta. <br>
+***4.2.8***  The QA campaign service shall verify that it will be testable in production. <br>
+***4.2.9***  The QA campaign service shall verify that it will log errors to Splunk. <br>
+***4.2.10*** The QA campaign service shall have aws kick off unit tests regularly. <br>
+***4.2.11*** The QA campaign service shall verify that aws will kick off acceptance tests regularly. <br>
+
+
+<br>
+
+# 4.3 Performance Requirements Verification <a name="4.3-performance-requirements-verification" />
+The performance requirements verification section will talk about all verifications for the requirements regarding the performance of the QA campaign service.
+
+***4.3.1*** The QA campaign service shall verify that it will complete the validation test on the email data file in less than 3 minutes. <br>
+***4.3.2*** The QA campaign service shall verify that it will use multi-thread processing to quickly make API calls. <br>
+***4.3.3*** The QA campaign service shall verify that it will cancel a task soon after calling the endpoint. <br>
+***4.3.4*** The QA campaign service shall verify that it will start a validation task soon after calling the endpoint. <br>
+***4.3.5*** The QA campaign service shall verify that it will get the task details soon after calling the endpoint.
+***4.3.6*** The QA campaign service shall verify that it will notify developers when performance falls below a determined percentage. <br> 
+
+<br>
+
+# 4.4 Logical Database Requirements Verification <a name="4.4-logical-database-requirements-verification" />
+The logical database requirements verification section will talk about all the verifications for the QA campaign service database.
+
+***4.4.1*** The QA campaign service shall verify that it will use a SQL database. <br>
+***4.4.2*** The QA campaign service shall verify that it will use the database to retrieve tasks. <br>
+***4.4.3*** The QA campaign service shall verify that it will use the database to cancel tasks. <br>
+***4.4.4*** The QA campaign service shall verify that it will use the database to start tasks. <br>
+***4.4.5*** The QA campaign service shall verify that it will use the database hold information on the campaign task. <br>
+***4.4.6*** The QA campaign service shall verify that it will use the database manipulate information on the campaign task. <br>
+***4.4.7*** The QA campaign service shall verify that it will use the database to log errors. <br>
+***4.4.8*** The QA campaign service database verify that it will shall have a data retention policy. <br>
+
+<br>
+
+# 4.5 System Requirements Verification <a name="4.5-system-requirements-verification" />
+The system requirements verification section will talk about all the verifications for the QA campaign service system.
+
+***4.5.1*** The QA campaign service shall verify that it will use multiple threads to process email data. <br>
+***4.5.2*** The QA campaign service shall verify that it will be available through all web browsers. <br>
+
+<br>
+
+# 4.6 External System Requirements Verification <a name="4.6-external-system-requirements-verification" />
+The external requirements section will talk about all the verifications for the external services needed for the QA campaign service.
+
+***4.6.1*** The QA campaign service shall verify that it will use AWS to host the web service. <br>
+***4.6.2*** The QA campaign service shall verify that it will use GitHub for version control. <br>
+***4.6.3*** The QA campaign service shall verify that it will use Splunk for quality control. <br>
+***4.6.4*** The QA campaign service shall verify that it will use CloudBees to handle integration. <br>
+***4.6.5*** The QA campaign service shall verify that it will use PostMan to call the endpoints. <br>
+***4.6.6*** The QA campaign service shall verify that it will use JFrog to handle the services artifacts. <br>
+***4.6.7*** The QA campaign service shall verify that it will use OKTA for service management. <br>
