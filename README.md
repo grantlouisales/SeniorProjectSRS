@@ -263,7 +263,7 @@ This section will describe the data that is being used in the service.
 
 # 3.3 Process Flow <a name="3.3-process-flow" />
 
-![Process Flow](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/SRSSeniorProject.drawio.png?raw=true) 
+![Process Flow](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/Sequence%20Diagram.png) 
 
 
 <br>
