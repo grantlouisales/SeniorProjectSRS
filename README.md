@@ -224,23 +224,14 @@ The external requirements section will talk about all the requirements for exter
 This section will go over the way the program's design and workflow will happen.
 
 ***3.1.1*** The QA campaign service will call an endpoint to download the campaign data. <br>
-
 ***3.1.2*** The QA campaign service will then unzip that file and start doing validation tests on the whole file. <br>
-
 ***3.1.3*** The QA campaign service will then complete the validation tests and then call a findrelation endpoint to test the relationships of ancestor and patron. <br>
-
 ***3.1.4*** The QA campaign service will grab 20,000 random lines of data and make API calls on those lines of data using multi-thread processing. <br>
-
 ***3.1.5*** The QA campaign service will then test teh UI of the campaign pages using WebdriverIO. <br>
-
 ***3.1.6*** The QA campaign service will be able to cancel a task at any given point in the process. <br>
-
 ***3.1.7*** The QA campaign service will be run in integration, beta, or production at all times. <br>
-
 ***3.1.8*** The QA campaign service will send alerts to splunk during the entirity of the process. <br>
-
 ***3.1.9*** The QA campaign service will be hosted in AWS and will be a backend to QA service. <br>
-
 ***3.1.10*** The QA campaign service will lastly call an endpoint called qamarkedapprove to send the data to marketing if it passed all QA tests. <br>
 
 <br>
@@ -250,20 +241,16 @@ This section will go over the way the program's design and workflow will happen.
 This section will describe the data that is being used in the service.
 
 ***3.2.1*** The QA campaign service shall download a file from an endpoint. <br>
-
 ***3.2.2*** The QA campaign service shall delete the the file after the processing has been done. <br>
-
 ***3.2.3*** The QA campaign service shall have a data retention policy for the database. <br>
-
 ***3.2.4*** The QA campaign service shall store task details in a database.  <br>
-
 ***3.2.5*** The QA campaign service shall pass along information and task data to marketing once all the tests are passed. <br>
 
 <br>
 
 # 3.3 Process Flow <a name="3.3-process-flow" />
 
-![Process Flow](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/Sequence%20Diagram.png) 
+![Sequence Diagram](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/Sequence%20Diagram.png) 
 
 <br>
 
