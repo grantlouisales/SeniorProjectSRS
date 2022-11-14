@@ -265,9 +265,7 @@ This section will describe the data that is being used in the service.
 
 ![Process Flow](https://github.com/grantlouisales/SeniorProjectSRS/blob/main/Sequence%20Diagram.png) 
 
-
 <br>
-
 
 # 4.1 Verification <a name="4.1-verification" />
 The verification section will go over all of the requirements above and explain how the verification for the requirements will be completed.
