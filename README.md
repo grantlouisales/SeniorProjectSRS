@@ -29,6 +29,9 @@
     * [2.4 Logical Database Requirements](#2.4-logical-database-requirements) 
     * [2.5 System Requirements](#2.5-system-requirements) 
     * [2.6 External System Requirements](#2.6-external-system-requirements) 
+    * [2.7 Validation Requirements](#2.7-validation-requirements) 
+    * [2.8 Alerting Requirements](#2.8-alerting-requirements) 
+
 * [3.1 Design Overview](#3.1-design-overview)
     * [3.2 Data](#3.2-data)
     * [3.3 Process Flow](#3.3-process-flow)
@@ -38,11 +41,8 @@
     * [4.4 Logical Database Requirements Verification](#4.4-logical-database-requirements-verification) 
     * [4.5 System Requirements Verification](#4.5-system-requirements-verification) 
     * [4.6 External System Requirements Verification](#4.6-external-system-requirements-verification) 
-
-
-
-
-
+    * [4.7 Validation Requirements Verification](#4.7-validation-requirements-verification) 
+    * [4.8 Alerting Requirements Verification](#4.8-alerting-requirements-verification) 
 
 <br>
 
@@ -219,6 +219,43 @@ The external requirements section will talk about all the requirements for exter
 ***2.6.6*** The QA campaign service shall use JFrog to handle the services artifacts. <br>
 ***2.6.7*** The QA campaign service shall use OKTA for service management. <br>
 
+<br>
+
+# 2.7 Validation Requirements <a name="2.7-validation-requirements" />
+The validation requirements section will talk about all the requirements for the main points of the validation section of the QA Campaign Service.
+
+***2.7.1*** The QA campaign service validation test shall validate the format of the patron pid field. <br>
+***2.7.2*** The QA campaign service validation test shall validate the format of the ancestor pid field. <br>
+***2.7.3*** The QA campaign service validation test shall validate the format of the ahnentafel field. <br>
+***2.7.4*** The QA campaign service validation test shall validate the format of the ancestor name field. <br>
+***2.7.5*** The QA campaign service validation test shall validate the patron pid in the file is the same as the patrons actual pid. <br>
+***2.7.6*** The QA campaign service validation test shall validate the ancestor pid in the file is the same as the ancestors actual pid. <br>
+***2.7.7*** The QA campaign service validation test shall validate the ahnentafel in the file is the same as the ancestors actual ahnentafel. <br>
+***2.7.8*** The QA campaign service validation test shall validate the ancestor name in the file is the same as the ancestor acutal name. <br>
+***2.7.9*** The QA campaign service validation test shall validate the patron pid is not empty. <br>
+***2.7.10*** The QA campaign service validation test shall validate the patron pid matches FamilySearch correct formatting. <br>
+***2.7.11*** The QA campaign service validation test shall validate the ancestor pid is not empty. <br>
+***2.7.12*** The QA campaign service validation test shall validate the ancestor pid matches FamilySearch formatting. <br>
+***2.7.13*** The QA campaign service validation test shall validate the ahnentafel is not 0. <br>
+***2.7.14*** The QA campaign service validation test shall validate the ancestor name is not empty. <br>
+
+<br>
+
+# 2.8 Alerting Requirements <a name="2.8-alerting-requirements" />
+The alerting requirements section will talk about all the requirements for alerting for the QA Campaign service.
+
+***2.8.1*** The QA campaign service shall send info alerts to Splunk. <br>
+***2.8.2*** The QA campaign service shall send error alerts to Splunk. <br>
+***2.8.3*** The QA campaign service shall send speacialized alerts to Splunk. <br>
+***2.8.4*** The QA campaign service shall have Splunk document all monitoring of the service. <br>
+***2.8.5*** The QA campaign service shall have CloudBees document every detail of the service. <br>
+***2.8.6*** The QA campaign service shall have CloudBees notify developers when the service is down. <br>
+***2.8.7*** The QA campaign service shall have Dynamax document every detail of the service. <br>
+***2.8.8*** The QA campaign service shall have Dynamax notify developers when the service is down. <br>
+***2.8.9*** The QA campaign service shall return a Job Id to use for a endpoint call. <br>
+***2.8.10*** The QA campaign service shall receive a list of all errors for task with a endpoint call. <br>
+
+<br>
 
 # 3.1 Design Overview <a name="3.1-design-overview" />
 This section will go over the way the program's design and workflow will happen.
@@ -235,7 +272,6 @@ This section will go over the way the program's design and workflow will happen.
 ***3.1.10*** The QA campaign service will lastly call an endpoint called qamarkedapprove to send the data to marketing if it passed all QA tests. <br>
 
 <br>
-
 
 # 3.2 Data <a name="3.2-data" />
 This section will describe the data that is being used in the service.
@@ -271,7 +307,6 @@ This functional requirements verification section will go over the verifications
 ***4.2.9***  The QA campaign service shall verify that it will log errors to Splunk. <br>
 ***4.2.10*** The QA campaign service shall have aws kick off unit tests regularly. <br>
 ***4.2.11*** The QA campaign service shall verify that aws will kick off acceptance tests regularly. <br>
-
 
 <br>
 
@@ -319,3 +354,39 @@ The external requirements section will talk about all the verifications for the 
 ***4.6.5*** The QA campaign service shall verify that it will use PostMan to call the endpoints. <br>
 ***4.6.6*** The QA campaign service shall verify that it will use JFrog to handle the services artifacts. <br>
 ***4.6.7*** The QA campaign service shall verify that it will use OKTA for service management. <br>
+
+<br>
+
+# 4.7 Validation Requirements Verification <a name="4.7-validation-requirements-verification" />
+The validation requirements section will talk about all the verifications for the validation needed for the QA campaign service.
+
+***4.7.1*** The QA campaign service validation test shall verify the validation of the format of the patron pid field. <br>
+***4.7.2*** The QA campaign service validation test shall verify the validation of the format of the ancestor pid field. <br>
+***4.7.3*** The QA campaign service validation test shall verify the validation of the format of the ahnentafel field. <br>
+***4.7.4*** The QA campaign service validation test shall verify the validation of the format of the ancestor name field. <br>
+***4.7.5*** The QA campaign service validation test shall verify the validation of the patron pid in the file is the same as the patrons actual pid. <br>
+***4.7.6*** The QA campaign service validation test shall verify the validation of the ancestor pid in the file is the same as the ancestors actual pid. <br>
+***4.7.7*** The QA campaign service validation test shall verify the validation of the ahnentafel in the file is the same as the ancestors actual ahnentafel. <br>
+***4.7.8*** The QA campaign service validation test shall verify the validation of the ancestor name in the file is the same as the ancestor acutal name. <br>
+***4.7.9*** The QA campaign service validation test shall  verify the validation of the patron pid is not empty.  <br>
+***4.7.10*** The QA campaign service validation test shall verify the validation of the patron pid matches FamilySearch correct formatting. <br>
+***4.7.11*** The QA campaign service validation test shall verify the validation of the ancestor pid is not empty.  <br>
+***4.7.12*** The QA campaign service validation test shall verify the validation of the ancestor pid matches FamilySearch formatting. <br>
+***4.7.13*** The QA campaign service validation test shall verify the validation of the ahnentafel is not 0.  <br>
+***4.7.14*** The QA campaign service validation test shall verify the validation of the ancestor name is not empty.  <br>
+
+<br  
+
+# 4.8 Alerting Requirements Verification <a name="4.8-alerting-requirements-verification" />
+The alerting requirements section will talk about all the verifications for the alerting needed for the QA campaign service.
+
+***4.8.1*** The QA campaign service shall verify that it will send info alerts to Splunk. <br>
+***4.8.2*** The QA campaign service shall verify that it will send error alerts to Splunk. <br>
+***4.8.3*** The QA campaign service shall verify that it will send speacialized alerts to Splunk. <br>
+***4.8.4*** The QA campaign service shall verify that it will have Splunk document all monitoring of the service. <br>
+***4.8.5*** The QA campaign service shall verify that it will have CloudBees document every detail of the service. <br>
+***4.8.6*** The QA campaign service shall verify that it will have CloudBees notify developers when the service is down. <br>
+***4.8.7*** The QA campaign service shall verify that it will have Dynamax document every detail of the service. <br>
+***4.8.8*** The QA campaign service shall verify that it will have Dynamax notify developers when the service is down. <br>
+***4.8.9*** The QA campaign service shall verify that it will return a Job Id to use for a endpoint call. <br>
+***4.8.10*** The QA campaign service shall verify that it will receive a list of all errors for task with a endpoint call. <br>
